@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Container (Glass Effect) */
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Headings */
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #1e293b;
+}
+
+h3 {
+    margin-top: 20px;
+    color: #334155;
+}
+
+/* Faculty name */
+#facultyName {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* Form Gradient */
+form {
+    background: linear-gradient(135deg, #e0f2fe, #f0f9ff);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Inputs */
+input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+/* Input focus */
+input:focus {
+    border-color: #2563eb;
+    box-shadow: 0px 0px 5px rgba(37,99,235,0.5);
+}
+
+/* Buttons */
+button {
+    padding: 8px 14px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    background: linear-gradient(135deg, #2563eb, #3b82f6);
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Logout button */
+button[onclick="logout()"] {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+/* Table */
+table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+/* Table header gradient */
+th {
+    background: linear-gradient(135deg, #2563eb, #3b82f6);
+    color: white;
+    padding: 10px;
+}
+
+/* Table cells */
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Row hover */
+tr:hover {
+    background: #f1f5f9;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* 🔔 Notification Popup */
+.notification {
+    background: #2563eb;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 6px;
+    animation: fadeIn 0.5s;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Notification container */
+#notificationContainer {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+}

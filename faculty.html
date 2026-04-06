@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>Faculty Dashboard</title>
+    <link rel="stylesheet" href="faculty.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Faculty Dashboard</h2>
+
+    <h3>Welcome, <span id="facultyName"></span></h3>
+    <button onclick="logout()">Logout</button>
+	<h3>Subject</h3>
+<input type="text" id="subjectName" placeholder="Enter Subject Name" required>
+<h3>Date</h3>
+<input type="date" id="attendanceDate" required>
+
+    <h3>Add Student</h3>
+   <form id="studentForm">
+    <input type="text" id="rollNo" placeholder="Enter Roll No" required>
+    <input type="text" id="studentName" placeholder="Enter Student Name" required>
+    <button type="submit">Add Student</button>
+</form>
+
+    <h3>Mark Attendance</h3>
+    <table>
+        <thead>
+    <tr>
+        <th>Roll No</th>
+        <th>Student Name</th>
+        <th>Present</th>
+        <th>Actions</th>
+    </tr>
+</thead>
+        <tbody id="studentTable"></tbody>
+    </table>
+
+    <button onclick="saveAttendance()">Save Attendance</button>
+	<button onclick="calculateAttendance()">Check Attendance %</button>
+	<h3>Set Reminder</h3>
+
+<form id="reminderForm">
+    <input type="text" id="task" placeholder="Enter Task" required>
+    <input type="datetime-local" id="reminderTime" required>
+    <button type="submit">Add Reminder</button>
+</form>
+
+<h3>My Reminders</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>Task</th>
+            <th>Date & Time</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="reminderTable"></tbody>
+</table>
+
+<button onclick="requestPermission()">Enable Notifications</button>
+
+<!-- Sound -->
+<audio id="alertSound" src="https://www.soundjay.com/buttons/sounds/beep-01a.mp3"></audio>
+
+<!-- Popup container -->
+<div id="notificationContainer"></div>
+
+</div>
+
+
+<script src="faculty.js"></script>
+
+</body>
+</html>

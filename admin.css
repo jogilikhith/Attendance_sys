@@ -1,0 +1,160 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container (Glass Card) */
+.container {
+    max-width: 850px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.2);
+    backdrop-filter: blur(6px);
+}
+
+/* Headings */
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #1e293b;
+}
+
+h3 {
+    margin-top: 20px;
+    color: #334155;
+}
+
+/* Logged-in user */
+#currentUser {
+    color: #4f46e5;
+    font-weight: bold;
+}
+
+/* Form Blend */
+form {
+    background: linear-gradient(135deg, #e0e7ff, #f0f4ff);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Inputs */
+input {
+    margin: 5px;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+/* Input focus */
+input:focus {
+    border-color: #4f46e5;
+    box-shadow: 0px 0px 6px rgba(79,70,229,0.5);
+}
+
+/* Buttons */
+button {
+    padding: 8px 14px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Save button */
+button[type="submit"] {
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+}
+
+button[type="submit"]:hover {
+    opacity: 0.9;
+}
+
+/* Logout button */
+button[onclick="logout()"] {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+button[onclick="logout()"]:hover {
+    opacity: 0.9;
+}
+
+/* Table */
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+/* Table header */
+th {
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+    color: white;
+}
+
+/* Table cells */
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Row hover */
+tr:hover {
+    background: #f1f5f9;
+}
+
+/* Action buttons */
+td button {
+    margin: 2px;
+}
+
+/* Edit button */
+td button:nth-child(1) {
+    background: linear-gradient(135deg, #facc15, #f59e0b);
+    color: black;
+}
+
+/* Delete button */
+td button:nth-child(2) {
+    background: linear-gradient(135deg, #ef4444, #b91c1c);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    input {
+        width: 100%;
+        display: block;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
+/* Password container */
+.password-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Input full width */
+.password-container input {
+    padding-right: 35px;
+}
+

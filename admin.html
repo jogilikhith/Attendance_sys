@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Admin Dashboard</h2>
+
+    <!-- Logged-in User -->
+    <h3>Current Logged-in User: <span id="currentUser"></span></h3>
+
+    <button onclick="logout()">Logout</button>
+
+    <!-- Create Faculty Account -->
+    <h3>Create Faculty Account</h3>
+    <form id="facultyForm">
+        <input type="text" id="username" placeholder="Username" required>
+        
+            <input type="text" id="password" placeholder="Enter Password" required>
+           
+        <button type="submit">Save Account</button>
+    </form>
+
+    <!-- Faculty Accounts Table -->
+    <h3>Faculty Accounts</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="facultyTable"></tbody>
+    </table>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>

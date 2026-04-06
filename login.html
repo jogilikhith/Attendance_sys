@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <!-- Font Awesome for eye icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Login</h2>
+
+    <form id="loginForm">
+        <input type="text" id="username" placeholder="Enter Username" required>
+
+        <div class="password-box">
+            <input type="password" id="password" placeholder="Enter Password" required>
+            <i class="fa-solid fa-eye" id="togglePassword"></i>
+        </div>
+
+        <select id="userType" required>
+            <option value="">Select User Type</option>
+            <option value="admin">Admin</option>
+            <option value="faculty">Faculty</option>
+        </select>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <p id="error"></p>
+
+    <p><center>Don't have an account? <a href="reg.html">Register</a></center></p>
+</div>
+
+<script src="login.js"></script>
+
+</body>
+</html>
